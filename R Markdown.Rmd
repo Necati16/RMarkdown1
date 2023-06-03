@@ -1,0 +1,134 @@
+---
+title: "R Markdown"
+author: "Necati Ferik"
+date: '2023-06-03'
+output:
+  html_document: default
+  word_document: default
+---
+
+# R Markdown'da başlık oluşturmak
+Genelde # tercih edilmektedir. # işareti konulduktan sonra bir kez boşluk bırakılır ve başlık yazılır. 
+
+## 1.1 R Markdown'da alt başlık oluşturmak 
+bunun için alt başlık düzeyi kadar # işareti konulmaktadır. Başlık ile # işareti arasına bir kez boşluk konur. 
+
+### 1.1.1. Alt Başlık Örneği
+Bu bir örnektir. 
+
+### 1.1.2. Alt Başlık Örneği
+Bu bir örnektir.
+
+R Markdown'da başlık oluşturmak
+===============================================
+Diğer bir seçenek altına çok sayıda = işareti koymaktır.
+
+# R Markdown'da Yazı Formatının Belirlenmesi
+
+## Italik Yapmak 
+**Necati**
+__Necati__
+
+## Bold Yapmak
+****Necati****
+____Necati_____
+
+## Kod Yazısı
+'ggplot()'
+
+## Üs Yazısı
+x^2^
+x~2~
+
+## Sıralı Liste Oluşturmak
+1. Popüler Bilim
+1. Sözlük
+    1. Gen Sözlüğü
+    1. Genetik Hastalıklar Sözlüğü
+    1. Genetik Terimler Sözlüğü
+    1. Kanser Sözlüğü
+1. Özgün İçerik
+    1. R Programlama 
+1. Projelerimiz 
+    1. Aminoasit Rehberi
+    1. Bilim İnsanları 
+    1. Zooloji
+    1. Protokol Rehberi 
+    
+    
+## Sırasız Liste Oluşturmak
+* Popüler Bilim
+* Sözlük
+    * Gen Sözlüğü
+    * Genetik Hastalıklar Sözlüğü
+    * Genetik Terimler Sözlüğü
+    * Kanser Sözlüğü
+* Özgün İçerik
+    * R Programlama 
+* Projelerimiz 
+    * Aminoasit Rehberi
+    * Bilim İnsanları 
+    * Zooloji
+    * Protokol Rehberi 
+    
+    
+# Tablo Oluşturmak
+
+Ad|Yaş|Boy|Kilo|Saç
+---|---|---|---|---
+Ali|20|1.75|90|Kahverengi
+Ayşe|21|1.80|80|Kumral
+Fatma|22|1.68|58|Sarışın
+Mehmet|23|1.60|85|Kahverengi
+
+# Link Oluşturma
+
+Matematik-Bilgisayar Bölümü hakkında daha fazla bilgi sahibi olmak istiyorsanız [Matematik-Bilgisayar](https://www.erbakan.edu.tr/matematikbilgisayar) sitesini ziyaret edebilirsiniz.
+
+Matematik-Bilgisayar Bölümü hakkında daha fazla bilgi sahibi olmak istiyorsanız <https://www.erbakan.edu.tr/matematikbilgisayar> sitesini ziyaret edebilirsiniz.
+
+
+# Resim Eklemek
+
+![an image caption Source: Ultimate Funny Dog Videos Compilation 2013.](C:\Users\Necati\Desktop/silly-dog.png)
+
+
+# Kod Yazma ile İlgili Örnekleri
+
+
+```{r}
+summary(cars)
+```
+
+
+``` {r,echo=FALSE}
+plot(cars)
+
+```
+#echo - Kodun raporda goruntulenmesi icin kullanilir. Varsayilan yani default TRUE’dur. 
+(default =TRUE)
+
+
+```{r}
+summary(cars)
+```
+
+
+``` {r,error=TRUE}
+plot(cars)
+
+```
+#error - Hata mesajlarinin raporda goruntulenmesi icin kullanilir. (default =FALSE)
+
+```{r}
+summary(cars)
+```
+
+
+``` {r, warning=TRUE}
+plot(cars)
+
+```
+#warning - kod uyarilarini raporda goruntulemek icin kullanilir (default = TRUE
+  
+  
